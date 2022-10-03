@@ -40,3 +40,11 @@ const products = [
 //Find the discounted price fro non-premium products
 
 ///Write code here
+let filterNonPremimumProduct = products.filter(products => {
+    return products.price <300;
+}).map(products=>{
+   products.price=products.price*0.9;
+   return products;
+})
+console.log(filterNonPremimumProduct)
+
